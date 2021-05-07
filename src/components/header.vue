@@ -58,11 +58,12 @@ header {
     i {
       margin: 0rem 0.6rem 0rem 0rem;
     }
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
     transition: all 0.5s ease-in;
 
     &:hover {
-      box-shadow: 0px 0px 6px rgba($color: white, $alpha: 0.8);
+      text-shadow: 0px 0px 6px rgba($color: white, $alpha: 0.8);
       transform: scale(1.1) translateY(-0.1rem);
     }
   }
@@ -104,7 +105,7 @@ header {
       padding: 0.6rem 0.8rem;
       border-radius: 0.3rem;
       border: none;
-      width: 24rem;
+      width: 30rem;
       height: 2.5rem;
       font-size: 0.9rem;
       outline: none;
@@ -139,6 +140,33 @@ header {
 
       cursor: pointer;
     }
+  }
+}
+
+
+@media (max-width: 991px) {
+  #avatar {
+    display: none;
+  }
+  #search input {
+    width: 16rem !important;
+  }
+
+  #search input:focus {
+    width: 18rem !important;
+  }
+}
+@media (max-width: 575px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+
+  #search input {
+    width: 10rem !important;
+  }
+
+  #search input:focus {
+    width: 13rem !important;
   }
 }
 </style>
